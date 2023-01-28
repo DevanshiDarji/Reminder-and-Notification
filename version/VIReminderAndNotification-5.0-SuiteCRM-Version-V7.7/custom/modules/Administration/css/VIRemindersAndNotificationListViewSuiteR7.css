@@ -1,0 +1,177 @@
+/*********************************************************************************
+ * This file is part of package Reminder And Notification.
+ * 
+ * Author : Variance InfoTech PVT LTD (http://www.varianceinfotech.com)
+ * All rights (c) 2020 by Variance InfoTech PVT LTD
+ *
+ * This Version of Reminder And Notification is licensed software and may only be used in 
+ * alignment with the License Agreement received with this Software.
+ * This Software is copyrighted and may not be further distributed without
+ * written consent of Variance InfoTech PVT LTD
+ * 
+ * You can contact via email at info@varianceinfotech.com
+ * 
+ ********************************************************************************/
+#reminderNotificationTable{
+  width: 100%;
+}
+
+#updateLicense{
+  float: right;
+}
+
+#deleteTable{
+  margin-top:20px;
+}
+
+/* Bulk Actions css */
+.bulkActionRow{
+  float: right;
+}
+
+.actionLabel{
+  margin-top: 6px;
+  text-align: center;
+}
+
+li.actionButton{
+  width: 126px;
+}
+
+li.actionButton ul.ddopen{
+  display:none;
+  margin-top:10px;
+}
+
+li.actionButton ul.ddopen li a{
+  border-bottom:1px solid #93a0ab;
+}
+
+/* Switch css */
+/* switch button css */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+  margin-top: 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #808f9c;
+  -webkit-transition: .4s;
+  transition: .4s;
+  height: 25px;
+  width: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3C8DBC;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Help Box Css */
+.container {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+/* Bulk Action Css */
+.bulkActionLabel{
+  line-height: 8px !important;
+  text-align: center !important;
+}
+
+.bulkActionRow{
+  float: right;
+}
+
+.bulkAction{
+  height: 27px;
+}
+
+.actionIcon{
+  vertical-align: text-top;
+  display:inline-block;
+  background-image:'themes/SuiteP/images/p_pag_tools.png';
+  background-position:0% 0%;
+}
+
+.actionLabel{
+  margin-top: 6px;
+  text-align: center;
+}
+
+li.actionButton{
+  width: auto;
+}
+
+li.actionButton ul.ddopen{
+  display:none;
+  margin-top:10px;
+  width:124px;
+}
+
+li.actionButton ul.ddopen li{
+  height:25px;
+}
+
+li.actionButton ul.ddopen li a{
+  border-bottom:1px solid #93a0ab;
+}
+
+#actionMenu{
+  width: 126px;
+}
+
+.suite_panel_col span a{
+  word-wrap: break-word;
+}
+
+/* List View Table Css*/
+.table-responsive{
+  margin-top:10px !important;
+}
+
+.suite_panel_col span a{
+  word-wrap: break-word;
+}

@@ -1,0 +1,410 @@
+/*********************************************************************************
+ * This file is part of package Reminder And Notification.
+ * 
+ * Author : Variance InfoTech PVT LTD (http://www.varianceinfotech.com)
+ * All rights (c) 2020 by Variance InfoTech PVT LTD
+ *
+ * This Version of Reminder And Notification is licensed software and may only be used in 
+ * alignment with the License Agreement received with this Software.
+ * This Software is copyrighted and may not be further distributed without
+ * written consent of Variance InfoTech PVT LTD
+ * 
+ * You can contact via email at info@varianceinfotech.com
+ * 
+ ********************************************************************************/
+#templateManager {
+  background: #eee;
+}
+
+.panel {
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 0;
+  display: flex;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.panel-toolbar {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-left: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
+  border-radius: 0;
+  display: flex;
+  background: #fff;
+}
+
+.template-panel {
+  margin-top: 8px;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 5px;
+  background: #eee;
+}
+
+#wizform > table > tbody > tr > td  {
+  background: #fff;
+}
+
+.template-container {
+  width: 50%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
+}
+
+div:nth-of-type(odd).template-container {
+  border-right: 1px solid rgb(211, 211, 211);
+}
+
+.template-container-full {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
+}
+
+.template-container-attachment {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.template-panel-container, .template-panel-container:after{clear:both}
+.template-panel-container {
+  background: #fff;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-group {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.button-group, .group {
+  display: inline-block;
+}
+
+.button-group-seperator {
+  padding-top: 4px;
+  margin-left: 4px;
+  margin-right: 6px;
+  border-right: 1px solid rgb(211, 211, 211);
+  display: inline;
+  content: '&nbsp;'
+}
+
+.clear-block {
+  display: block;
+}
+
+.progression-container {
+  margin: 0 0 8px 0;
+  padding:0;
+}
+
+ul.progression {
+  margin: 0;
+  padding:0;
+}
+
+.progression li {
+  background-color: #f08377;
+  border-radius: 0px;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  margin-right: 16px;
+  width: auto;
+  margin-top: 4px;
+}
+
+.progression li:nth-child(1)::before {
+  border: none transparent;
+}
+
+.progression li::before, .progression li::after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: transparent;
+  border-left-color: #fff;
+  border-radius: 0px;
+}
+
+.progression li::before {
+  border-width: 16px;
+  margin-top: -7px;
+  margin-left: -20px;
+}
+
+.progression li::after {
+  border-left-color: #f08377;
+  border-width: 15px;
+  margin-top: -5px;
+  margin-left: 20px;
+}
+
+.progression li.selected {
+  background-color: #808f9c;
+  color: #fff;
+}
+
+.progression li.selected::after {
+  border-left-color: #808f9c;
+}
+
+.progression li:hover {
+  background-color: #f08377;
+  color: #fff;
+  cursor: pointer;
+}
+
+.progression li:hover::after, .progression li.selected:hover::after {
+  border-left-color: #808f9c;
+  color: #fff;
+}
+
+.progression li:last-child::after {
+  border-left-color: transparent;
+}
+
+.progression li div, .progression li div *{
+  color: white;
+  text-decoration: none;
+  padding-left: 8px;
+  display: inline;
+}
+
+.wizard-summary-right .test, .wizard-summary-right .schedule {
+  background-position: center center;
+  text-align: center;
+  vertical-align: bottom;
+  padding: 8px;
+}
+
+.wizard-step-info {
+  margin-bottom: 12px;
+}
+.setvisibilityclass{
+  display : block;
+  margin-bottom : 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.tmpltColumn {
+  float: left;
+    width: 33.33%;
+  padding: 0 10px;
+}
+
+.tmpltRow {margin: 0 -5px;}
+/* Clear floats after the columns */
+.tmpltRow :after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .tmpltColumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .tmpltCard {
+    height: auto !important;
+  }
+  
+  .tmplt_txt_height{
+    height:auto !important;
+  }
+  
+  .tmplt_img{
+    width:100% !important;
+  }
+}
+
+.tmpltCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  margin-bottom:25px;
+  height: 582px;
+}
+
+.tmplt_txt{
+  color: #000000;
+  font-size: 14px;
+}
+
+.tmplt_img{
+  margin-bottom: 10px;
+}
+
+.tmplt_btn{
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 10px 22px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  float: left;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tmplt_btn_1:hover{
+  background-color: #000000;
+  color: white;
+}
+
+.btn_cntr_1{
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.tmpltCard img{
+  width: 100%;
+  height: auto;
+}
+
+#select {
+  width: 300px;
+  height: 75px;
+}
+
+.select-checkbox option::before {
+  content: "\2610";
+  width: 1.3em;
+  text-align: center;
+  display: inline-block; 
+}
+
+.select-checkbox option:checked::before {
+  content: "\2611";
+}
+
+.select-checkbox-fa option::before {
+  font-family: FontAwesome;
+  content: "\f096";
+  width: 1.3em;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.select-checkbox-fa option:checked::before {
+  content: "\f046";
+}
+
+.optionGroup {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.optionChild {
+  padding-left: 15px;
+}
+
+li{margin-left:1em}
+
+.ui-helper-clearfix:after {
+  clear: both;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+
+.conditionMessage{
+  margin-left: 8px;
+  display: inline-table;
+}
+
+.conditionDiv{
+  padding-top: 10px; 
+  padding-bottom:10px;
+  margin-left: 8px;
+}
+
+#sendNotificationReceiver{
+  margin: 10px;
+  margin-left:20px;
+}
+
+.note{
+  color:red;
+}
+
+#displayTinyMce, #customTemplates, #template, #emailNotificationRow, #step3, #step2, #triggerNotificationRow, #triggerMonthValue, #hours, #emailNoteRow, #displayTinyMce, #triggerNotificationFieldsRow{
+  display:none;
+}
+
+#triggerNotificationCol{
+  padding-bottom: 10px;
+}
+
+#templateBackBtn{
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+#templateType, #templateField, #primaryModuleFields, #status, #triggerMonthValue, #triggerAction, #triggerPeriod, #fieldNotification, #module, #subject, #triggerValue, #fieldcomparison, #triggerNotificationModuleFields{
+  width: 190px;
+}
+
+#buttons, #reminderNotification{
+  margin-left: 14px;
+}
+
+.image{
+  cursor: auto;
+}
+
+#workAniversryTemplates, #marriageAniversryTemplates, #birthdayTemplates, #othersTemplates{
+  display: none;
+  cursor: pointer;
+}
+
+#btnClear, #btnNext, #btnSave{
+  margin-left: 20px;
+}
+
+#conditionBorder{
+  border: 1px solid #dddddd;
+}
+
+#fieldcomparisonLabel{
+  width: 340px;
+}
