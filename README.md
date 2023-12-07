@@ -13,4 +13,3 @@ Features:
 8) Able to Add Module field’s All/Any Condition. If Condition matched then only Notification triggered.
 9) Able to Send Email Notification to All users of System, Selected User, Text & Email Type Field of Relate Module, Records owner or Individual Person of Module.
 10) If Status is Active of Reminder And Notification then only Notification Triggered.
-
